@@ -1,4 +1,4 @@
-#!/bin/bash
+\#!/bin/bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 SWAP="$( readlink -f $DIR/.. )"
@@ -28,7 +28,7 @@ setup () {
     set +eu
     source $VENVDIR/bin/activate
     set -eu
-    pip install -e $SWAP
+    pip3 install -e $SWAP
 
     echo "Creating config filein $SWAP/conf/swap.conf"
     echo "Edit this file to configure swap"
